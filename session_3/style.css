@@ -1,0 +1,17 @@
+.left{
+    margin-left: 600px;
+    float: left;
+    text-align: center;
+}
+
+p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+.right{
+    margin-right: 750px;
+    float: right;
+    text-align: center;
+}

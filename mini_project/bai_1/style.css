@@ -1,0 +1,76 @@
+div {
+    background-color: rgb(221, 217, 217);
+    width           : 50%;
+
+}
+
+h1,
+h2,
+p {
+    width      : 418px;
+    margin-left: 20px;
+}
+
+.header {
+    height: 150px;
+    width : 1056px;
+}
+
+.content-body .content-left .space {
+    height          : 250px;
+    background-color: blue;
+    border-radius   : 15px;
+    width           : 90%;
+    margin-left     : 20px;
+}
+
+.content-body {
+    height : 500px;
+    display: flex;
+
+}
+
+.content-body .content-left {
+    height: 200px;
+    width : 50%;
+}
+
+.content-body .content-right {
+    height: 100%;
+    width : 50%;
+
+}
+
+.content-right {
+    display       : flex;
+    flex-direction: column;
+}
+
+.content-right .image {
+    width: 100px
+}
+
+img {
+    height: 80px;
+    width : 80px;
+}
+
+.content-right .title-1 {
+    height : 25%;
+    display: flex;
+}
+
+.content-right .title-2 {
+    height : 25%;
+    display: flex;
+}
+
+.content-right .title-3 {
+    height : 25%;
+    display: flex;
+}
+
+.content-right .title-4 {
+    height : 25%;
+    display: flex;
+}

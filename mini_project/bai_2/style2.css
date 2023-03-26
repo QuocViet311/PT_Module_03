@@ -1,0 +1,18 @@
+.header {
+    width         : 15%;
+    text-transform: uppercase;
+    font-size     : large;
+    font-weight   : 600;
+    border-bottom : 1px solid yellow;
+}
+
+.content-body {
+    display: flex;
+    width  : 50%;
+    border : 1px solid red;
+}
+
+.content-body .content-left {
+    width : 50%;
+    border: 1px solid green;
+}

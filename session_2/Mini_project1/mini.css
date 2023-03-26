@@ -1,0 +1,46 @@
+.title {
+    display        : flex;
+    gap            : 5px;
+    justify-content: center;
+    text-transform : uppercase;
+}
+
+.title .detail {
+    color      : aqua;
+    font-weight: bold;
+}
+
+.para {
+    text-align: center;
+}
+
+.footer {
+    display        : flex;
+    gap            : 20px;
+    justify-content: center;
+}
+
+.content1 {
+    height         : 50px;
+    width          : 100px;
+    align-items    : center;
+    justify-content: center;
+    display        : flex;
+    background     : black;
+    color          : white;
+}
+
+.content2 {
+    height         : 50px;
+    width          : 100px;
+    align-items    : center;
+    justify-content: center;
+    display        : flex;
+    background     : black;
+    color          : white;
+}
+
+.img {
+    display        : flex;
+    justify-content: center;
+}
