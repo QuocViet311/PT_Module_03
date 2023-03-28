@@ -1,0 +1,33 @@
+.container {
+    height    : 200px;
+    width     : 80%;
+    padding   : 20px;
+    background: #315C68;
+    color     : white;
+}
+
+.content {
+    margin-left: 20px;
+    display    : inline-block;
+    width      : 30%;
+    height     : 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin    : 0;
+    padding   : 0;
+}
+
+p {
+    margin: 40px 20px;
+}
+
+i {
+    margin-top : 55px;
+    margin-left: 20px;
+    font-size  : 30px;
+    height     : 40px;
+    width      : 40px;
+    text-align : center;
+}

@@ -1,0 +1,14 @@
+.info {
+    display       : inline-block;
+    vertical-align: top;
+    width         : 30%;
+    text-align    : center;
+    height        : 100px;
+}
+
+.img {
+
+    height    : 100px;
+    width     : 30%;
+    background: red;
+}

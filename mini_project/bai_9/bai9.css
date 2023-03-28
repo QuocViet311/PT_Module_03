@@ -1,0 +1,28 @@
+.header {
+    text-align: center;
+    width     : 45%;
+    margin    : 50px 0;
+}
+
+
+
+.content {
+    display       : inline-block;
+    width         : 30%;
+    vertical-align: top;
+    height        : 400px;
+
+}
+
+.body {
+    width: 80%;
+}
+
+.title {
+    width      : 50%;
+    border     : 1px solid;
+    margin-left: 25%;
+    height     : 100%;
+    box-shadow : 100px grey;
+    padding    : 10px;
+}
