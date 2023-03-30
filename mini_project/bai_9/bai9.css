@@ -23,6 +23,7 @@
     border     : 1px solid;
     margin-left: 25%;
     height     : 100%;
-    box-shadow : 100px grey;
+    box-shadow : 5px 5px 10px grey;
+    box-shadow : -5px -5px 10px grey;
     padding    : 10px;
 }

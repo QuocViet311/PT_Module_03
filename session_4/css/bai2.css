@@ -1,0 +1,253 @@
+.container {
+    display              : grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas  :
+        "header header header header header header"
+        "aside-left main main main aside-right aside-right";
+    margin: 0 50px;
+}
+
+.container .header {
+    display        : flex;
+    height         : 70px;
+    grid-area      : header;
+    justify-content: space-evenly;
+    align-items    : center;
+}
+
+.container .left {
+    border   : 1px solid green;
+    grid-area: aside-left;
+
+}
+
+.container .right {
+    border   : 1px solid blue;
+    grid-area: aside-right;
+
+}
+
+.container .content {
+    border   : 1px solid black;
+    grid-area: main;
+}
+
+.nav {
+    display    : flex;
+    align-items: center;
+    gap        : 15px
+}
+
+.nav>img {
+    height       : 40px;
+    width        : 40px;
+    border-radius: 50%;
+}
+
+.detail>img {
+    height       : 40px;
+    width        : 40px;
+    border-radius: 50%;
+}
+
+.status>img {
+    height       : 40px;
+    width        : 40px;
+    border-radius: 50%;
+}
+
+input {
+    height: 30px;
+    width : 400px;
+}
+
+.status>input {
+    border       : none;
+    font-size    : 15px;
+    outline-width: 0;
+    width        : 100%;
+}
+
+.fa-facebook-f {
+    font-size       : 30px;
+    background-color: blue;
+    color           : white;
+    height          : 30px;
+    width           : 30px;
+    text-align      : center;
+}
+
+.icons {
+    display: flex;
+    gap    : 10px;
+}
+
+.left {
+    display         : flex;
+    flex-direction  : column;
+    text-align      : center;
+    font-size       : 20px;
+    background-color: rgb(211, 206, 206);
+}
+
+.top>p:hover {
+    background : white;
+    cursor     : pointer;
+    border-left: 3px solid blue;
+}
+
+.bottom>p:hover {
+    background : white;
+    cursor     : pointer;
+    border-left: 3px solid blue;
+}
+
+.content {
+    background-color: whitesmoke;
+}
+
+.content .status-bar {
+    margin          : 20px 30px;
+    border          : 1px solid whitesmoke;
+    height          : 150px;
+    background-color: white;
+}
+
+.status {
+    display    : flex;
+    align-items: center;
+    margin     : 20px 20px;
+    gap        : 20px;
+}
+
+.btn {
+    border-top     : 2px solid grey;
+    display        : flex;
+    font-size      : 20px;
+    justify-content: space-around;
+    cursor         : pointer;
+}
+
+.fa-images {
+    color       : rgb(73, 159, 178);
+    margin-right: 10px;
+}
+
+.fa-user-plus {
+    color       : orange;
+    margin-right: 10px;
+}
+
+.fa-smile {
+    color       : rgb(255, 217, 0);
+    margin-right: 10px;
+}
+
+.detail {
+    margin : 10px 25px;
+    display: flex;
+    gap    : 15px
+}
+
+.content .main {
+    margin          : 50px 30px;
+    border          : 1px solid whitesmoke;
+    background-color: white;
+}
+
+.status-user {
+    margin-left: 30px;
+}
+
+.img-user {
+    display    : flex;
+    margin-left: 30px;
+    margin-top : 10px;
+    height     : 160px;
+    width      : 160px;
+    gap        : 10px;
+}
+
+.emotion {
+    display      : flex;
+    margin-left  : 30px;
+    gap          : 20px;
+    font-size    : 20px;
+    margin-bottom: 10px;
+}
+
+i {
+    cursor: pointer;
+}
+
+.story {
+    display        : flex;
+    justify-content: space-between;
+    margin         : 0 10px;
+    cursor         : pointer;
+}
+
+.face {
+    display         : flex;
+    gap             : 20px;
+    justify-content : space-evenly;
+    background-color: white;
+}
+
+.face>img {
+    margin-bottom: 20px;
+    margin-top   : 10px;
+    height       : 80px;
+    width        : 80px;
+    border-radius: 50%;
+    border       : 1px solid black;
+    cursor       : pointer;
+}
+
+.side-right {
+    margin          : 20px 30px;
+    border          : 1px solid whitesmoke;
+    height          : 150px;
+    background-color: white;
+}
+
+.right {
+    background-color: whitesmoke;
+}
+
+.view {
+    background-color: white;
+    margin          : 40px 30px;
+}
+
+.sale {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sale>img {
+    margin: 0 30px;
+    height: 200px;
+    width : 200px;
+    cursor: pointer;
+}
+
+.sponsored {
+    display        : flex;
+    justify-content: space-between;
+    margin         : 20px 30px;
+}
+
+.ad {
+    background-color: white;
+    margin          : 0 30px;
+}
+
+.footer>img {
+    background-color   : white;
+    margin             : 0 50px;
+    height             : 200px;
+    width              : 80%;
+    background-position: center center;
+    cursor             : pointer;
+}
