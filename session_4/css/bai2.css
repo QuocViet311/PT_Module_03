@@ -16,19 +16,16 @@
 }
 
 .container .left {
-    border   : 1px solid green;
     grid-area: aside-left;
 
 }
 
 .container .right {
-    border   : 1px solid blue;
     grid-area: aside-right;
 
 }
 
 .container .content {
-    border   : 1px solid black;
     grid-area: main;
 }
 
@@ -150,7 +147,10 @@ input {
 }
 
 .content .main {
-    margin          : 50px 30px;
+    margin-top      : 50px;
+    margin-bottom   : 50px;
+    margin-left     : 30px;
+    padding-right   : 30px;
     border          : 1px solid whitesmoke;
     background-color: white;
 }
@@ -160,12 +160,15 @@ input {
 }
 
 .img-user {
-    display    : flex;
-    margin-left: 30px;
-    margin-top : 10px;
-    height     : 160px;
-    width      : 160px;
-    gap        : 10px;
+    display              : grid;
+    padding              : 30px;
+    grid-template-columns: repeat(3, 1fr);
+    width                : 100%;
+    gap                  : 10px;
+}
+
+.img-user>* {
+    flex: 1
 }
 
 .emotion {
@@ -197,8 +200,8 @@ i {
 .face>img {
     margin-bottom: 20px;
     margin-top   : 10px;
-    height       : 80px;
-    width        : 80px;
+    height       : 100px;
+    width        : 100%;
     border-radius: 50%;
     border       : 1px solid black;
     cursor       : pointer;
@@ -225,12 +228,13 @@ i {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.sale>img {
-    margin: 0 30px;
-    height: 200px;
-    width : 200px;
-    cursor: pointer;
+img {
+    width          : 100%;
+    object-fit     : cover;
+    object-position: center;
 }
+
+
 
 .sponsored {
     display        : flex;
@@ -243,11 +247,65 @@ i {
     margin          : 0 30px;
 }
 
-.footer>img {
-    background-color   : white;
-    margin             : 0 50px;
-    height             : 200px;
-    width              : 80%;
-    background-position: center center;
-    cursor             : pointer;
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display              : grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas  :
+            "header header header header header header"
+            "aside-left main main main aside-right aside-right";
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display              : grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas  :
+            "header header header header"
+            "aside-left main main aside-right ";
+        margin: 0 50px;
+    }
+
+    .face>img {
+        margin-bottom: 20px;
+        margin-top   : 10px;
+        height       : 40px;
+        width        : 100%;
+        border-radius: 50%;
+        border       : 1px solid black;
+        cursor       : pointer;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas  :
+            "header header header "
+            "aside-left main aside-right ";
+        margin: 0 50px;
+    }
+
+    .face>img {
+        margin-bottom: 20px;
+        margin-top   : 10px;
+        height       : 40px;
+        width        : 100%;
+        border-radius: 50%;
+        border       : 1px solid black;
+        cursor       : pointer;
+    }
+
+    .status>input {
+        border       : none;
+        font-size    : 15px;
+        outline-width: 0;
+        width        : 100%;
+    }
 }

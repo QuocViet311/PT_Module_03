@@ -1,0 +1,334 @@
+.container {
+    padding            : 20px 200px;
+    background         : url('../img/Decore\ \(1\).png');
+    background-repeat  : no-repeat;
+    background-position: top right;
+}
+
+.header {
+    display        : flex;
+    justify-content: space-between;
+    position       : fixed;
+    top            : 10;
+    z-index        : 10000;
+}
+
+.nav {
+    display    : flex;
+    align-items: center;
+    gap        : 100px;
+    position   : fixed;
+    left       : 500px;
+}
+
+.nav>a {
+    text-decoration: none;
+    color          : black;
+    text-transform : uppercase;
+    font-weight    : bold;
+    cursor         : pointer;
+}
+
+.nav>a:hover {
+    color           : white;
+    background-color: black;
+}
+
+.nav>button {
+    height          : 40px;
+    width           : 102px;
+    border          : 1px solid black;
+    cursor          : pointer;
+    background-color: transparent;
+    border-radius   : 10px;
+}
+
+.nav>button:hover {
+    background-color: black;
+    color           : white;
+}
+
+.nav>select {
+    border          : none;
+    outline         : none;
+    background-color: transparent;
+}
+
+.banner {
+    display        : flex;
+    flex-direction : row-reverse;
+    align-items    : center;
+    justify-content: center;
+    width          : 50%;
+}
+
+.img-banner {
+    padding-top: 50px;
+    width      : 10%;
+}
+
+.banner-content {
+    padding-bottom: 100px;
+}
+
+.banner-content>h1 {
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 84px;
+    line-height   : 89px;
+    letter-spacing: -0.04em;
+    color         : #181E4B;
+    text-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.banner-content>h3 {
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 20px;
+    line-height   : 30px;
+    text-transform: uppercase;
+    color         : #DF6951;
+}
+
+.banner-content>p {
+    font-style   : normal;
+    font-weight  : 500;
+    font-size    : 20px;
+    line-height  : 30px;
+    color        : #5E6282;
+    padding-right: 130px;
+}
+
+.banner-content>.btn {
+    display    : flex;
+    gap        : 50px;
+    align-items: center;
+}
+
+.btn>button {
+    width        : 170px;
+    height       : 60px;
+    background   : #F1A501;
+    box-shadow   : 0px 20px 35px rgba(241, 165, 1, 0.15);
+    border-radius: 10px;
+    border       : none;
+    text-align   : center;
+    color        : white;
+    font-size    : 18px;
+    cursor       : pointer;
+}
+
+.btn>i {
+    width          : 50px;
+    height         : 50px;
+    background     : #DF6951;
+    box-shadow     : 0px 15px 30px rgba(223, 105, 81, 0.3);
+    font-size      : 25px;
+    color          : white;
+    border-radius  : 50%;
+    cursor         : pointer;
+    text-align     : center;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.btn>p {
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 20px;
+    line-height: 26px;
+    color      : #686D77;
+    width      : 92px;
+    height     : 26px;
+    cursor     : pointer;
+}
+
+.title-main {
+    text-align: center;
+}
+
+.title-main>p {
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 18px;
+    line-height: 27px;
+    text-align : center;
+    color      : #5E6282;
+}
+
+.title-main>h2 {
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 50px;
+    line-height   : 64px;
+    text-align    : center;
+    text-transform: capitalize;
+    color         : #14183E;
+}
+
+.title-main>img {
+    float   : right;
+    position: relative;
+    bottom  : 200px;
+}
+
+.main-service {
+    display        : flex;
+    gap            : 170px;
+    align-items    : center;
+    justify-content: center;
+    text-align     : center;
+}
+
+.main-service>.service2 {
+    height       : 314px;
+    width        : fit-content;
+    background   : #FFFFFF;
+    box-shadow   : 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 36px;
+}
+
+.title-selling>p {
+    padding-top: 100px;
+    text-align : center;
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 18px;
+    line-height: 27px;
+    text-align : center;
+    color      : #5E6282;
+}
+
+.title-selling>h2 {
+    padding-bottom: 50px;
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 50px;
+    line-height   : 64px;
+    text-align    : center;
+    text-transform: capitalize;
+    color         : #14183E;
+}
+
+.detail1 {
+    display       : flex;
+    flex-direction: column;
+}
+
+.detail1>img {
+    width : 314px;
+    height: 457px;
+}
+
+.info {
+    height          : 100px;
+    width           : 208px;
+    background-color: white;
+    display         : flex;
+    flex-direction  : column;
+    position        : relative;
+    bottom          : 228px;
+    left            : 53px;
+    align-items     : flex-start;
+}
+
+.info>p {
+    padding-left: 20px;
+}
+
+.detail {
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : center;
+}
+
+.detail2 {
+    display       : flex;
+    flex-direction: column;
+}
+
+.detail2>img {
+    width : 314px;
+    height: 456px;
+}
+
+.detail3 {
+    display       : flex;
+    flex-direction: column;
+}
+
+.detail3>img {
+    width : 314px;
+    height: 456px;
+}
+
+img {
+    cursor    : pointer;
+    transition: transform .2s;
+}
+
+img:hover {
+    padding-top   : 20px;
+    transform     : scale(1.5);
+    padding-bottom: 20px;
+}
+
+.footer {
+    display        : flex;
+    justify-content: space-between;
+    height         : 250px;
+}
+
+.footer1 {
+    width    : max-content;
+    font-size: large;
+}
+
+.footer1>img {
+    padding-bottom: 20px;
+}
+
+.footer2 {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    height         : 200px;
+    font-size      : large;
+    font-weight    : 500;
+}
+
+.footer3 {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    height         : 200px;
+    font-size      : large;
+    font-weight    : 500;
+}
+
+.footer4 {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    height         : 200px;
+    font-size      : large;
+    font-weight    : 500;
+}
+
+.footer.\35 {
+    flex-direction: column;
+}
+
+.footer-icon {
+    display        : flex;
+    justify-content: space-between;
+    font-size      : 30px;
+}
+
+.copy {
+    margin-top : 30px;
+    font-size  : 20px;
+    font-weight: bold;
+    text-align : center;
+}
